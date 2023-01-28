@@ -25,15 +25,10 @@ body {
 .app__hero {
   width: 100%;
   margin: 0 auto;
-  height: 100%;
   padding: 0 3rem;
 }
 
 /* === Banner === */
-main {
-  margin-top: 400px;
-}
-
 main,
 .banner {
   margin-top: 280px;
@@ -157,11 +152,6 @@ header {
 
 /* === Trilhas === */
 
-.container__category {
-  margin-top: 100px;
-  height: 200px;
-
-}
 
 .category__title {
   color: #e5e5e5e5;
@@ -172,7 +162,7 @@ header {
 }
 
 .category__title--EmAlta {
-  margin-top: 50px;
+  margin-top: 20px;
   color: #e5e5e5e5;
   font-size: 18px;
   line-height: 17px;
@@ -269,11 +259,65 @@ section {
 
 /* Rodape */
 
-footer {
-  margin-top: 500px;
+.icons__list {
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
 }
 
-.icons__list {
+.icons__list li {
+  margin-right: 1em;
+}
+
+.footer__options {
+  color: rgba(255, 255, 255, 0.697);
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.footer__options li {
+  row-gap: 1em;
+  margin-bottom: 0.3em;
+}
+
+.footer__options li:hover {
+  color: #ffffff;
+}
+
+.list__options {
+  display: block;
+  list-style: none;
+}
+
+.footer__VerificationCode {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  margin-left: 2em;
+  color: #ffffff;
+  width: 200px;
+  height: 25px;
+  border-style: groove;
+  border-color: #ffffff;
+  height: 38px;
+}
+
+.link-content__service-code {
+  background: 0 0;
+  color: grey;
+  border: solid 1px grey;
+  padding: 0.5rem;
+  margin-left: 30px;
+}
+
+.link-content__service-code:hover {
+  color: white;
+  border: solid 1px white;
+}
+
+.link-content__copyright {
+  color: #ffffff;
+  font-size: 11px;
+  margin-left: 25px;
+  padding: 1rem 4px;
 }
